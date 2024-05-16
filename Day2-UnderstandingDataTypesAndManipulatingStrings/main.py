@@ -64,4 +64,27 @@
 # # Most to the left gets priority
 # print(3 * 3 + 3 / 3 - 3)
 
-print(3 * (3 + 3) / 3 - 3)
+# print(3 * (3 + 3) / 3 - 3)
+
+# 24 - Number Manipulation and F Strings in Python
+# print(round(2.6666666, 2))
+
+# Floor Division
+# print(type(8 // 3))
+
+# result = 4 / 2
+# result /= 2
+# print(result)
+
+# score = 0
+# # User scores a point
+# score += 1
+
+# print(score)
+
+# F-Strings
+score = 0
+height = 1.8
+winning = True
+#f-String
+print(f"Your score is {score}, your height is {height}, you are winning is {winning}")
