@@ -11,12 +11,24 @@
 # print("Hello " + input("What is your name?") + "!")
 
 # Python Variables
+# name =  "Jack"
+# print(name)
+#
+# name = "Angela"
+# print(name)
+#
+# name = input("What is your name? ")
+# length = len(name)
+# print(length)
+
+# Variable Naming
 name =  "Jack"
 print(name)
 
 name = "Angela"
 print(name)
-
-name = input("What is your name? ")
-length = len(name)
-print(length)
+# Separate variables with multiple words with an UNDERSCORE
+user_name = input("What is your name? ")
+# Variables with numbers, the number has to be at the END of the name
+length1 = len(user_name)
+print(length1)
