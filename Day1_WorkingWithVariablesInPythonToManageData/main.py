@@ -8,4 +8,15 @@
 # The Python Input Function
 #  input() will get user input in the console
 # Then print() will print the word "Hello" and the user input
-print("Hello " + input("What is your name?") + "!")
+# print("Hello " + input("What is your name?") + "!")
+
+# Python Variables
+name =  "Jack"
+print(name)
+
+name = "Angela"
+print(name)
+
+name = input("What is your name? ")
+length = len(name)
+print(length)
