@@ -19,20 +19,49 @@
 # False
 
 # 20 - Type Error, Type Checking and Type Conversion
-# num_char = len(input("What is your name? "))
-# # print("Your name has " + num_char + " characters.")
+# # num_char = len(input("What is your name? "))
+# # # print("Your name has " + num_char + " characters.")
+#
+# # #Type Checking
+# # print(type(num_char))
+# # print(type(len(input("What is your name? "))))
+#
+# # #Type Conversion/Casting
+# # new_num_char = str(num_char)
+# # print("Your name has " + new_num_char + " characters.")
+#
+# a = float(123)
+# print(type(a))
+#
+# print(70 + float("100.5"))
+#
+# print(str(70) + str(100))
 
-# #Type Checking
-# print(type(num_char))
-# print(type(len(input("What is your name? "))))
+# 22 - Mathematical Operation in Python
+# 3 + 5
+# 7 - 3
+# 3 * 2
+# print(type(6 / 3))
 
-# #Type Conversion/Casting
-# new_num_char = str(num_char)
-# print("Your name has " + new_num_char + " characters.")
+# # Exponent
+# print(2 ** 3)
 
-a = float(123)
-print(type(a))
+# # PEMDASLR
+# # Parentheses
+# ()
+# # Exponents
+# **
+# # Multiplication
+# *
+# # Division
+# /
+# # Addition
+# +
+# # Subtraction
+# -
+# # Multiplication and Division are equal in priority * /
+# # Addition and Subtraction are equal in priority + -
+# # Most to the left gets priority
+# print(3 * 3 + 3 / 3 - 3)
 
-print(70 + float("100.5"))
-
-print(str(70) + str(100))
+print(3 * (3 + 3) / 3 - 3)
