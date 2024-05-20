@@ -41,3 +41,7 @@
 #
 # for step in range(6):
 #     hurdle()
+
+# 62 - Indentation in Python
+# Python indentation == 1 tab or 4 spaces
+# Can't mix tabs and spaces in Python 3
