@@ -45,3 +45,25 @@
 # 62 - Indentation in Python
 # Python indentation == 1 tab or 4 spaces
 # Can't mix tabs and spaces in Python 3
+
+# 63 - While Loops
+# (from reeborg.ca - Practice)
+# def turn_right():
+#     turn_left()
+#     turn_left()
+#     turn_left()
+#
+#
+# def hurdle():
+#     move()
+#     turn_left()
+#     move()
+#     turn_right()
+#     move()
+#     turn_right()
+#     move()
+#     turn_left()
+#
+#
+# while not at_goal():
+#     hurdle()
