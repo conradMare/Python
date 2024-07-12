@@ -18,16 +18,26 @@
 # # print(position_strength)
 
 # Global Scope
-player_health = 10
+# player_health = 10
 
 
-def game():
+# def game():
 
-    def drink_potion():
-        position_strength = 2
-        print(player_health)
+#     def drink_potion():
+#         position_strength = 2
+#         print(player_health)
 
-    drink_potion()
+#     drink_potion()
 
 
-print(player_health)
+# print(player_health)
+
+# There is no Block Scope
+game_level = 3
+
+def create_enemy():
+    enemies = ["Skeleton", "Zombie", "Alien"]
+    if game_level < 5:
+        new_enemy = enemies[0]
+
+    print(new_enemy)
