@@ -1,11 +1,12 @@
 from turtle import Turtle, Screen
 
-timmy_the_turtle = Turtle()
-timmy_the_turtle.shape("turtle")
-timmy_the_turtle.color("LightGreen")
-timmy_the_turtle.forward(100)
-timmy_the_turtle.right(90)
+tim = Turtle()
+tim.shape("turtle")
+tim.color("LightGreen")
 
+for _ in range(4):
+    tim.forward(100)
+    tim.left(90)
 
 screen = Screen()
 screen.exitonclick()
