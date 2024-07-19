@@ -17,6 +17,7 @@
 # import heroes
 # print(heroes.gen())
 
+# Draw a dotted line:
 # from turtle import Turtle, Screen
 #
 # tim = Turtle()
@@ -38,6 +39,30 @@
 # screen = Screen()
 # screen.exitonclick()
 
+# Draw shapes:
+# from turtle import Turtle, Screen
+# import random
+#
+# tim = Turtle()
+# tim.shape("turtle")
+# tim.color("LightGreen")
+#
+# colors = ["red", "orange", "yellow", "green", "blue", "violet"]
+# def draw_shape(num_sides):
+#     for _ in range(num_sides):
+#         angle = 360 / num_sides
+#         tim.forward(100)
+#         tim.left(angle)
+#
+#
+# for shape_side_n in range(3, 11):
+#     tim.color(random.choice(colors))
+#     draw_shape(shape_side_n)
+#
+# screen = Screen()
+# screen.exitonclick()
+
+# Draw a random walk:
 from turtle import Turtle, Screen
 import random
 
@@ -45,17 +70,15 @@ tim = Turtle()
 tim.shape("turtle")
 tim.color("LightGreen")
 
-colors = ["red", "orange", "yellow", "green", "blue", "violet"]
-def draw_shape(num_sides):
-    for _ in range(num_sides):
-        angle = 360 / num_sides
-        tim.forward(100)
-        tim.left(angle)
+colors = ["aquamarine", "coral", "CornflowerBlue", "DarkCyan", "DarkSlateGray", "DarkSeaGreen4"]
+directions = [0, 90, 180, 270]
+tim.pensize(15)
+tim.speed("fastest")
 
-
-for shape_side_n in range(3, 11):
+for _ in range(200):
     tim.color(random.choice(colors))
-    draw_shape(shape_side_n)
+    tim.forward(30)
+    tim.setheading(random.choice(directions))
 
 screen = Screen()
 screen.exitonclick()
