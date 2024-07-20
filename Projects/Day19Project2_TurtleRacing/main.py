@@ -4,7 +4,7 @@ import random
 is_race_on = False
 screen = Screen()
 screen.setup(width=500, height=400)
-user_estimate = screen.textinput(title="Make a estimate", prompt="Which turtle will wint the race? Enter a color: ")
+user_estimate = screen.textinput(title="Make a estimate", prompt="Which turtle will win the race? Enter a color: ")
 colors = ["red", "orange", "yellow", "green", "blue", "violet"]
 y_positions = [-70, -40, -10, 20, 50, 80]
 all_turtles = []
