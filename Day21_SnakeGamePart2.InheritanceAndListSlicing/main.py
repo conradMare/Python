@@ -1,23 +1,31 @@
-class Animal:
-    def __init__(self):
-        self.num_eyes = 2
+from turtle import Screen
+from snake import Snake
+from food import Food
+import time
 
-    def breathe(self):
-        print("Inhale, exhale.")
+screen = Screen()
+screen.setup(width=600, height=600)
+screen.bgcolor("black")
+screen.title("My Snake Game")
+screen.tracer(0)
 
+snake = Snake()
+food = Food()
 
-class Fish(Animal):
-    def __init__(self):
-        super().__init__()
+screen.listen()
+screen.onkey(snake.up, "Up")
+screen.onkey(snake.down, "Down")
+screen.onkey(snake.left, "Left")
+screen.onkey(snake.right, "Right")
 
-    def breathe(self):
-        super().breathe()
-        print("Doing this underwater.")
+game_is_on = True
+while game_is_on:
+    screen.update()
+    time.sleep(0.1)
+    snake.move()
 
-    def swim(self):
-        print("Moving in water.")
+    # Detect collision with food
+    if snake.head.distance(food) < 15:
+        food.refresh()
 
-
-nemo = Fish()
-nemo.breathe()
-nemo.swim()
+screen.exitonclick()
